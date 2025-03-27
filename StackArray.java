@@ -64,24 +64,6 @@ return popelement;
 
     }
 
-public int top() 
-
-     {
-
-if (top == -1) 
-
-      {
-
-System.out.println("Stack is empty");
-
-return -1;
-
-        }
-
-return st [top];
-
-    }
-
 public void display ()   {  
 
 System.out.println("Printing stack elements .....");  
