@@ -14,11 +14,11 @@ public StackArray(int size)
 
   {
 
-max = size;
+        max = size;
 
-st = new int[max];
+        st = new int[max];
 
-top = -1;
+        top = -1;
 
     }
 
@@ -26,13 +26,13 @@ public void push (int value)
 
   {
 
-if (top == max - 1) 
+    if (top == max - 1) 
 
-       {
+        {
 
-System.out.println("Stack overflow");
+    System.out.println("Stack overflow");
 
-return;
+    return;
 
         }
 
@@ -86,11 +86,18 @@ public void display ()   {
 
 System.out.println("Printing stack elements .....");  
 
-for(int i = top; i>=0;i--)  
+    if(top == -1)
+    {
+        System.out.println("Stack is empty");
+    }
+    else 
+    {
+        for(int i = top; i>=0;i--)  
 
        {             System.out.println(st[i]);         
 
        }  
+    }
 
    }  
 
