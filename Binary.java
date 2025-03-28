@@ -5,7 +5,6 @@ public class Binary{
             int mid = left + (right - left) / 2;
             if (arr[mid] == key) 
                 return mid;
-            
             if (arr[mid] < key) 
                 left = mid + 1;     
             else 
