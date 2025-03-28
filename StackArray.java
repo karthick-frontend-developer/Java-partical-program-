@@ -34,6 +34,7 @@ public class StackArray
         if(top == -1)
         {
             System.out.println("stack is underflow");
+            return;
         }
         System.out.println("printing element in stack.....");
         for (int i = top;i>=0;i--) {
