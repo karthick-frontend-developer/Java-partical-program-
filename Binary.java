@@ -1,12 +1,10 @@
-public class BinarySearch {
+public class Binary{
     public static int binarySearch(int[] arr, int key) {
         int left = 0, right = arr.length - 1;
-
         while (left <= right) {
-            int mid = left + (right - left) / 2;  // Find middle element
-
+            int mid = left + (right - left) / 2;
             if (arr[mid] == key) 
-                return mid;  // Key found
+                return mid;
             
             if (arr[mid] < key) 
                 left = mid + 1;     
@@ -15,13 +13,9 @@ public class BinarySearch {
         }
         return -1; 
     }
-
     public static void main(String[] args) {
-        int[] arr = [1,5,7,8,9];
-        int index = binarySearch(arr, 8);
-        if (index == -1)
-            System.out.println("Element not found.");
-        else
-            System.out.println("Element found at index: " + index);
+        int[] arr = {1,5,7,8,9};
+        int index = binarySearch(arr,8);
+            System.out.println("Element found in location(Binary serach): " + index);
     }
 }
