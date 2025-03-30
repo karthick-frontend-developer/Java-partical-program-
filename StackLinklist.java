@@ -7,6 +7,7 @@ class Node {
 class StackLinkedList {
     private Node top;
     public void push(int data) {
+
         Node newNode = new Node(data);
         newNode.next = top;
         top = newNode;
@@ -30,10 +31,15 @@ class StackLinkedList {
             System.out.println("1.PUSH 2.POP 3.DISPLAY 4.EXIT");
             System.out.println("Enter your choice:");
             switch (sc.nextInt()) {
-                case 1 -> stack.push(sc.nextInt());
+                case 1 -> {
+                    System.out.println("Enter a value to push into the stack:");
+                    int v = sc.nextInt();
+                    stack.push(v);}
                 case 2 -> stack.pop();
                 case 3 -> stack.display();
-                case 4 -> { sc.close(); return; }
+                case 4 -> { 
+                    System.out.println("Exiting.....");
+                    sc.close(); return; }
                 default -> System.out.println("Invalid choice, try again");
             }
         }
