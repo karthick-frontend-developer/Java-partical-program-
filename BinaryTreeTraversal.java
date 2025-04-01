@@ -23,6 +23,7 @@ public class BinaryTreeTraversal {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
         root.left.left = new TreeNode(5);
         root.right.right = new TreeNode(6);
         System.out.print("Preorder: "); preorder(root);
