@@ -34,9 +34,11 @@ class StackLinkedList {
                 case 1 -> {
                     System.out.println("Enter a value to push into the stack:");
                     int v = sc.nextInt();
-                    stack.push(v);}
-                case 2 -> stack.pop();
-                case 3 -> stack.display();
+                    stack.push(v);
+                    break;
+                }
+                case 2 -> stack.pop();break;
+                case 3 -> stack.display();break;
                 case 4 -> { 
                     System.out.println("Exiting.....");
                     sc.close(); return; }
